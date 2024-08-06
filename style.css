@@ -1,0 +1,317 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    list-style: none;
+    outline: none;
+
+}
+ h1,
+ h2,
+ h3,
+ h4 {
+    font-family: 'Roboto', sans-serif;
+ }
+ header {
+   position: relative;
+   min-height: 100vh;
+   width: 100%;
+   background: url(leafbg.jpg);
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-color: #fafafa;
+
+ }
+
+ header .navbar .nav-top {
+    position: relative;
+    width: 100%;
+    padding: 0.75rem 0rem;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+ header .navbar .nav-top p .icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 33px;
+    height: 33px;
+    position: absolute;
+    top: 50%;
+    right: 1rem;
+    transform: translateY(-50%);
+    font-size: 1rem;
+    font-weight: 300;
+    color: #f0f0f0;
+    background-color: #000;
+    cursor: pointer;
+    transition: all 1s;
+ }
+header .navbar .nav-top .icon:hover{
+   background-color: #222;
+
+}
+ header .navbar .nav-top p{
+    padding: 0rem 1rem;
+    font-size: 0.9rem;
+    font-weight: 300;
+    color: #fefefe;
+    text-transform: capitalize;
+ }
+
+ header .nav-main{
+   width: 100%;
+   background-color: #fff;
+   
+ }
+ header .nav-main .container{
+   width: 100%;
+   max-width: 1300px;
+   padding: 1rem;
+   margin: 0 auto;
+   display: grid;
+   grid-template-columns: repeat(auto-fit,minmax(280px,1fr));
+   align-items: center;
+   gap: 1rem;
+ }
+
+ header .nav-main .box-search{
+   width: 100%;
+   
+ }
+
+ header .nav-main .box-search form{
+   width: 100%;
+   max-width: 250px;
+   padding: 0.5rem;
+   border: 1px solid #ccc;
+   background-color: #fafafa;
+   display: flex;
+   align-items: center;
+   gap: 0.3rem;
+ }
+
+ header .nav-main .box-search input{
+   border: none;
+   background-color: transparent;
+   outline: none;
+   font-size: 1rem;
+   line-height: 1rem;
+   font-weight: 500;
+   color: #222;
+ }
+
+ header .nav-main .box-search .icon{
+   font-size: 1rem;
+   color: #333;
+   cursor: pointer;
+   border-left: 1px solid #777;
+   padding: 0rem 0.5rem;
+ }
+
+ header .nav-main .box-logo{
+   width: 100%;
+   display: flex;
+   justify-content: center;
+
+ }
+ header .nav-main .box-logo .logo-link{
+   font-family: 'Roboto',sans-serif;
+   font-size: 2.8rem;
+   font-weight: 700;
+   color: #048647;
+ }
+ header .nav-main .box-logo .logo-link span{
+   font-size: 2.5rem;
+   font-weight: 700;
+   color: #530202;
+ }
+
+ header .nav-main .box-control{
+   width: 100%;
+   display: flex;
+   justify-content: flex-end;
+   align-items: center;
+   gap: 1rem;
+ }
+ header .nav-main .box-control .icon{
+   width: fit-content;
+   min-width: 60px;
+   display: flex;
+   justify-content: center;
+   height: 38px;
+   align-items: center;
+   gap: 5px;
+   color: #222;
+   cursor: pointer;
+   padding: 0.25rem 0.5rem;
+   border: 1px solid #fafafa;
+   transition: all 1s;
+}
+header .nav-main .box-control .icon:hover{
+   background-color: #048647;
+   color:#fff;
+   border: 1px solid #fafafa;
+}
+header .nav-navigation{
+   background-color: #fafafa43;
+   color: #fff;
+   border-top: 1px solid #f1f1f1;
+   border-bottom: 1px solid #aaa ;
+   width: 100%
+}
+header .nav-navigation ul{
+   width: 100%;
+   max-width: 1500px;
+   padding: 1rem;
+   margin: 0 auto;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   gap: 1.5rem;
+
+}
+header .nav-navigation ul .nav-link{
+   padding: 5px 5px;
+   position: relative;
+}
+header .nav-navigation ul .nav-link a{
+   font-size: 1.25rem;
+   color: #111;
+   font-weight: 300;
+}
+header .nav-navigation ul .nav-link:after{
+   position: absolute;
+   content: '';
+   bottom: 0;
+   left: 10%;
+   width: 10%;
+   height: 3px;
+   background-color: #afaaaa;
+   transition: all 1s;
+}
+header .nav-navigation ul .nav-link:hover:after{
+   width: 80%;
+   background-color: #048647;
+}
+.header .content{
+   display: flex;
+   flex-direction: column;
+   justify-content: end;
+   width: 100%;
+   max-width: 1500px;
+   padding: 4rem 1rem;
+   margin: 0 auto;
+   padding-bottom: 2rem;
+}
+.header .content p{
+   font-size: 1.2rem;
+   line-height: 1.8rem;
+   width: 100%;
+   max-width: 500px;
+   font-weight: 300;
+   color: black;
+   padding: 0.5rem 0rem;
+}
+.header .content .controls{
+   display: flex;
+   align-items: center;
+   gap: 1rem;
+   padding:2rem 0rem;
+}
+.header .content .controls .btn-start{
+   padding: 0.751rem 2rem;
+   font-size: 1rem;
+   line-height: 1rem;
+   text-align: center;
+   color: #000;
+   cursor: pointer;
+   border: 1px solid #000;
+}
+.header .content .controls .btn-more{
+   padding: 0.51rem 2rem;
+   text-align: center;
+   color: #fff;
+   background-color: #000;
+   cursor: pointer;
+   text-transform: capitalize;
+}
+section{
+   width: 100%;
+}
+section .container{
+   width: 100%;
+   max-width: 1400px ;
+   margin: 0 auto;
+   padding: 1rem;
+}
+section .heading{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   padding: 2rem 0rem;
+   gap: 0.25rem;
+}
+section .heading .title{
+   font-size: 2.4rem;
+   line-height: 2.4rem;
+   font-weight: 300;
+   color: #111;
+   text-transform: capitalize;
+}
+.features{
+   background-color: #fafafa;
+}
+.features .items {
+   display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+   gap: 2rem;
+   padding: 2rem 0rem;
+}
+.features .items .item{
+   background-color: #fff;
+   padding: 2rem 0.25rem;
+   border-bottom: 2px solid #444;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   gap: 0.25rem;
+   cursor: pointer;
+   box-shadow: 3px 3px 4px #ccc;
+   height: 500px; /* Ensure all boxes have the same height */
+}
+.features .items .item .image{
+   width: 100%;
+   height: 200px; /* Ensure all images have the same height */
+   overflow: hidden;
+}
+.features .items .item .image img {
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+}
+.features .items .item .title{
+   padding: 0.5rem;
+   border-bottom: 1px solid #fafafa;
+   font-size: 1.1rem;
+   line-height: 1.1rem;
+   font-weight: 500;
+   color: #111;
+}
+.features .items .item p{
+   padding: 0.5rem 0rem;
+   border-bottom: 1px solid #fafafa;
+   font-size: 0.95rem;
+   line-height: 1.5rem;
+   font-weight: 300;
+   text-align: center;
+   color: #333;
+}
